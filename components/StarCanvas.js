@@ -13,7 +13,7 @@ const StarCanvas = ({ parentRef }) => {
       const height = (canvas.height =
         parentRef?.current?.offsetHeight || window.innerHeight);
 
-      const numStars = 2000;
+      const numStars = 1500;
       const colors = ["white", "#061E24"];
       const stars = [];
 

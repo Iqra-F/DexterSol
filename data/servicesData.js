@@ -65,21 +65,21 @@ export const supply = [
     description:
       "We adopt sustainability practices to provide long-term benefits.",
     image: "/1.png",
-    btnText: "Unlock your business's full potential ",
+    btnText: "Unlock your business&rsquo;s full potential ",
   },
   {
     title: "Who is 1IGS?",
     description:
       "We adopt sustainability practices to provide long-term benefits.",
     image: "/1.png",
-    btnText: "Unlock your business's full potential ",
+    btnText: "Unlock your business&rsquo;s full potential ",
   },
   {
     title: "Who is 1IGS?",
     description:
       "We adopt sustainability practices to provide long-term benefits.",
     image: "/1.png",
-    btnText: "Unlock your business's full potential ",
+    btnText: "Unlock your business&rsquo;s full potential ",
   },
 ];
 export default services;

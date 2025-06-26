@@ -10,12 +10,17 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#3c4250]  text-white text-sm relative z-10">
+    <footer className=" text-white text-sm relative z-20">
       {/* Background overlay */}
       <div
-        className="bg-cover bg-center bg-no-repeat py-12 px-6 md:px-10 lg:px-16 xl:px-24"
-        style={{ backgroundImage: "url('/background-network.png')" }}
-      >
+  className="relative bg-cover bg-center overflow-hidden bg-no-repeat py-12 px-6 md:px-10 lg:px-16 xl:px-24"
+  style={{ backgroundImage: "url('/Network.jpg')" }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-[#393e47] opacity-80 z-0" />
+
+  {/* Content */}
+  <div className="relative z-10 mb-10 text-white">
         <Image
           src="/footer-logo.png"
           alt="Step"
@@ -30,7 +35,7 @@ export default function Footer() {
             <h3 className="text-base font-bold mb-2">Procurement Consulting</h3>
             <ul className="space-y-1 ">
               <li className="border-b-[1px] pb-2 border-gray-400 flex items-center">
-                <FaCaretRight /> Let's Create
+                <FaCaretRight />Let&rsquo;s Create
               </li>
               <li className="border-b-[1px] pb-2 border-gray-400 flex items-center">
                 <FaCaretRight /> Procurement Consulting
@@ -324,13 +329,14 @@ export default function Footer() {
             </div>
           </div>
         </div>
+</div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-[#2D53A4]  text-center text-xs ">
+      <div className="bg-[#2D53A4] absolute bottom-5 w-full  text-center text-xs ">
         <div className="flex flex-col md:flex-row justify-between items-center ">
           {/* zigzag */}
-          <div className="relative w-full md:w-1/3 overflow-hidden bg-transparent h-11">
+          <div className="relative hidden md:block w-full md:w-1/3 overflow-hidden bg-transparent h-11">
             {/* 🔹 Top Row of Zigzags (no horizontal flip) */}
             <div className="absolute top-0 left-0 bg-transparent flex h-11">
               {Array(6)
@@ -381,7 +387,7 @@ export default function Footer() {
           </span>
         </div>
       </div>
-      <div className="w-full text-xs my-1 text-center justify-center">
+      <div className="absolute bottom-0 w-full text-xs my-1 text-center justify-center">
         © Copyright 2017–2025 IIGS Corporation. ALL Rights Reserved
       </div>
     </footer>

@@ -43,10 +43,10 @@ export default function NextStep() {
         </div>
         <p className="mt-4 text-justify max-w-4xl mx-auto text-sm md:text-base font-light leading-relaxed">
           We provide customized solutions to meet your needs, blending
-          innovation and excellence to enhance your life and deliver results. At
-          IIGS, we’re redefining Global Procurement and Supply Chain. With
-          strong ethics, a commitment to sustainability, and support for local
-          communities, we address challenges while making a meaningful impact.
+  innovation and excellence to enhance your life and deliver results. At
+  IIGS, we&rsquo;re redefining Global Procurement and Supply Chain. With
+  strong ethics, a commitment to sustainability, and support for local
+  communities, we address challenges while making a meaningful impact.
         </p>
       </div>
 

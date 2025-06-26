@@ -47,16 +47,18 @@ export default function WhyUs() {
               Reinventing Possibilities with IIGS
             </h3>
             <p className="text-gray-600 text-[20px] mb-6 leading-relaxed">
-              At IIGS, we transform more than supply chains—we redefine
-              industries. Together, we've reshaped the procurement strategies
-              behind the special effects that amaze, the stadiums that unite,
-              the food we share, the clothes we wear, the cars we drive, and
-              even the holidays we cherish. With IIGS, reinvention isn't just
-              possible; it's inevitable.
+              
+                At IIGS, we transform more than supply chains—we redefine
+                industries. Together, we&rsquo;ve reshaped the procurement
+                strategies behind the special effects that amaze, the stadiums
+                that unite, the food we share, the clothes we wear, the cars we
+                drive, and even the holidays we cherish. With IIGS, reinvention
+                isn&rsquo;t just possible; it&rsquo;s inevitable.
+              
             </p>
             <p className="text-gray-600 mb-6 text-[20px] leading-relaxed">
-              Efficiency, precision, and exceptional outcomes—that's the IIGS
-              promise.
+              Efficiency, precision, and exceptional outcomes&mdash;that&rsquo;s
+              the IIGS promise.
             </p>
             <button className="text-[#2460b4] items-center flex text-[20px] hover:text-blue-700 font-semibold transition-colors">
               PARTNER WITH US TODAY{" "}

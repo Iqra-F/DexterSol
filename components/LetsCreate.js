@@ -56,14 +56,14 @@ const LetsCreate = () => {
 
           {/* Heading */}
           <h2 className="text-2xl md:text-[32px] font-bold text-[#2D53A4] mb-6">
-            Let's Create
+            Let&rsquo;s Create
           </h2>
 
           {/* Subtext */}
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Simplify your supply chain today with our tailored outsourcing
-            solutions. Whether you’re looking to save time, cut costs, or
-            improve your supplier relationships, we’ve got you covered.
+            solutions. Whether you&rsquo;re looking to save time, cut costs, or
+            improve your supplier relationships, we&rsquo;ve got you covered.
           </p>
         </div>
 
@@ -125,8 +125,8 @@ const LetsCreate = () => {
                 </div>
                 {/* Description */}
                 <p className="text-white text-sm mb-6 leading-relaxed">
-                  At IIGS, we're revolutionizing procurement and supply chain
-                  management. Our solutions enhance efficiency, strengthen
+                  At IIGS, we&rsquo;re revolutionizing procurement and supply
+                  chain management. Our solutions enhance efficiency, strengthen
                   resilience, and drive collaboration. Gain full control of your
                   supply chain and achieve scalability to meet your goals.
                 </p>

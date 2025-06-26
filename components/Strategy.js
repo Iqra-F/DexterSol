@@ -89,10 +89,10 @@ const Strategy = () => {
             {activeTab === "features" && (
               <>
                 <p className="mb-4 text-justify max-w-4xl mx-auto">
-                  Tailored one-stop shop solutions that fit your business—1IGS’s
-                  comprehensive all-in-one services deliver exactly what you
-                  need to overcome complex operational challenges and drive
-                  growth.
+                 Tailored one-stop shop solutions that fit your business—1IGS&rsquo;s
+  comprehensive all-in-one services deliver exactly what you
+  need to overcome complex operational challenges and drive
+  growth..
                 </p>
                 <p className="mb-4 text-justify max-w-4xl mx-auto">
                   We are not just consultants—we are collaborators. We co-create
@@ -166,7 +166,7 @@ const Strategy = () => {
                       outsourcing...
                     </p>
                     <div className="text-[#F06230] flex items-center text-sm font-medium">
-                      Be ready for tomorrow’s challenges today{" "}
+                      Be ready for tomorrow&rsquo;s challenges today.{" "}
                       <span className="ml-2">
                         <MdKeyboardDoubleArrowRight />
                       </span>
@@ -203,8 +203,7 @@ const Strategy = () => {
                       Supply Chain Outsourcing
                     </h2>
                     <p className="text-[#393939] text-base md:text-[20px] mb-4">
-                      Optimize your supply chain with 1IG’s flexible
-                      outsourcing...
+                      Optimize your supply chain with 1IG&rsquo;s flexible outsourcing...
                     </p>
                     <div className="text-[#F06230] flex items-center text-sm font-medium">
                       Transform Your Supply Chain Now{" "}
