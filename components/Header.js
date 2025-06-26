@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed w-full h-[155px] z-50 transition-all duration-300 ${
+      className={`fixed w-full h-[135px] sm:h-[155px] z-50 transition-all duration-300 ${
         isScrolled ? "bg-white/95 backdrop-blur-sm shadow-md" : " bg-[#010305]"
       }`}
     >
@@ -53,7 +53,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-2">
           {/* 🔷 Logo */}
           <div className="flex items-center">
-            <div className="w-[204px] h-[50px] mr-2 relative rounded-lg overflow-hidden">
+            <div className="md:w-[204px] md:h-[50px]  sm:w-[150px] sm:h-[35px] w-[60px] h-[20px] mr-1 sm:mr-2 relative rounded-lg overflow-hidden">
               <Image
                 src="/igs-logo.png"
                 alt="IGS Logo"
@@ -69,21 +69,21 @@ const Header = () => {
             ></div>
             <div className="flex flex-col text-xs sm:text-base md:text-lg ml-1 ">
               <span
-                className={`text-sm  ${
+                className={`sm:text-sm text-[10px]  ${
                   isScrolled ? "text-gray-900" : "text-white"
                 }`}
               >
                 RESHAPING
               </span>
               <span
-                className={`text-sm  ${
+                className={`sm:text-sm text-[10px] ${
                   isScrolled ? "text-gray-900" : "text-white"
                 }`}
               >
                 PROCUREMENT
               </span>
               <span
-                className={`text-sm  ${
+                className={`sm:text-sm text-[10px] ${
                   isScrolled ? "text-gray-900" : "text-white"
                 }`}
               >
@@ -153,22 +153,18 @@ const Header = () => {
         {/* 📱 Mobile Dropdown Nav */}
         {isMenuOpen && (
           <div className="lg:hidden">
-            <div className="px-4 pt-2 pb-3 space-y-1 bg-white rounded-lg shadow-lg">
+            <div className="px-4 pt-2 pb-3 space-y-1 bg-black text-white rounded-lg shadow-lg">
               {navigation.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium"
+                  className="block px-3 py-2 text-sm hover:text-blue-50 font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <div className="px-3 py-2">
-                <button className="btn-primary w-full">
-                  <GiHamburgerMenu />
-                </button>
-              </div>
+              
             </div>
           </div>
         )}
@@ -178,7 +174,7 @@ const Header = () => {
       <div
         className={`${
           isScrolled ? "text-gray-900" : "text-white"
-        } text-xs sm:text-sm font-bold space-x-3 flex flex-wrap justify-start px-1 sm:px-6 h-5 sm:h-10 items-center`}
+        } text-xs sm:text-sm font-bold space-x-3 flex flex-wrap justify-start px-1 sm:px-6 h-8 sm:h-10 items-center`}
       >
         <div className="text-[#2460b4] text-[7px] sm:text-sm md:text-lg flex items-center">
           <span className="text-[#d2562b] mr-1">1IGS </span> STRATEGY{" "}

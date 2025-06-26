@@ -45,9 +45,9 @@ export default function ServiceCard({
       </div>
 
       {/* Button */}
-      <div className="text-center">
+      <div className="text-center w-full">
         <button
-          className={`bg-[#2D53A4] hover:bg-[#4e586f] text-white font-semibold p-3 rounded transition-all duration-300`}
+          className={`bg-[#2D53A4] w-full hover:bg-[#4e586f] text-white font-semibold p-3 md:py-2 md:px-[2px] lg:p-2 rounded transition-all duration-300`}
         >
           {service.btnText} ≫
         </button>
