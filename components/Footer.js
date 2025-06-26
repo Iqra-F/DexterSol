@@ -98,14 +98,18 @@ export default function Footer() {
               <h4 className="font-bold mb-2">Stay Connected</h4>
               <div className="flex items-center gap-3 mb-4">
                 {["yt", "fb", "insta", "linkedin", "x"].map((icon) => (
+<>
+  <div className=" relative rounded-full overflow-hidden">
                   <Image
-                    key={icon}
                     src={`/${icon}.png`}
-                    alt={`${icon} Icon`}
+      alt={`${icon} icon`}
                     width={32}
                     height={32}
-                    className="rounded-full"
+                    className="object-cover"
+                    priority
                   />
+                </div>
+                 </>
                 ))}
               </div>
 
@@ -133,14 +137,18 @@ export default function Footer() {
           <h4 className="font-bold mb-2">Stay Connected</h4>
           <div className="flex items-center gap-3 mb-4">
             {["yt", "fb", "insta", "linkedin", "x"].map((icon) => (
-              <Image
-                key={icon}
-                src={`/${icon}.png`}
-                alt={`${icon} Icon`}
-                width={32}
-                height={32}
-                className="rounded-full"
-              />
+              <>
+              <div className=" relative rounded-full overflow-hidden">
+                  <Image
+                   src={`/${icon}.png`}
+      alt={`${icon} icon`}
+                    width={32}
+                    height={32}
+                    className="object-cover"
+                    priority
+                  />
+                </div>
+                </>
             ))}
           </div>
 
