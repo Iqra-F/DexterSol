@@ -4,7 +4,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { MessageCircle } from "lucide-react";
 import { supply } from "../data/servicesData";
 import Image from "next/image";
-import SupplyCard from "./Supplycard";
+import SupplyCard from "./SupplyCard";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export default function SupplyChain() {

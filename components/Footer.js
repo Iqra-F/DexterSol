@@ -21,7 +21,7 @@ export default function Footer() {
           alt="Step"
           width={284}
           height={90}
-          className="object-cover mb-3"
+          className="object-cover mb-10"
           priority
         />
         <div className="max-w-[1600px]  mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-white">
