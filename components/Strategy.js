@@ -49,7 +49,7 @@ const Strategy = () => {
         {/* Header */}
         <div className="text-center gap-[30px] flex flex-col mb-16 p-3 sm:px-16 ">
           <div className="flex flex-wrap w-full items-center justify-center gap-4">
-            <div className="h-[62px] w-12 relative">
+            <div className=" md:w-8 md:h-[62px] sm:w-12 w-4 h-10 relative">
               <Image
                 src="/strategy.png"
                 alt="hero"
@@ -58,10 +58,10 @@ const Strategy = () => {
                 priority
               />
             </div>
-            <h2 className="text-xl sm:text-2xl md:text-[54px] font-bold text-[#2D53A4] mb-6">
+            <h2 className="text-sm sm:text-xl md:text-3xl lg:text-4xl font-bold text-[#2D53A4] mb-6">
               Strategy And Transformation
             </h2>
-            <div className="h-[62px] w-12 relative">
+            <div className="md:w-8 md:h-[62px] sm:w-12 w-4 h-10 relative">
               <Image
                 src="/strategy.png"
                 alt="hero"
@@ -86,121 +86,126 @@ const Strategy = () => {
               <div key={tab.id} className="bg-white border rounded shadow">
                 <button
                   onClick={() => toggleTab(tab.id)}
-                  className="flex justify-between items-center w-full text-left bg-[#2d4c92] text-white font-bold text-base px-4 py-3"
+                  className="flex justify-between text-sm items-center transition-all duration-300 ease-in-out w-full text-left bg-[#2d4c92] text-white sm:text-base px-4 py-3"
                 >
                   {tab.label}
                   {openTabs[tab.id] ? (
-                    <MdKeyboardArrowUp className="text-xl" />
+                    <MdKeyboardArrowUp className="sm:text-xl" />
                   ) : (
-                    <MdKeyboardArrowDown className="text-xl" />
+                    <MdKeyboardArrowDown className="sm:text-xl" />
                   )}
                 </button>
 
-                {openTabs[tab.id] && (
-                  <div className="px-4 py-4 text-gray-800 text-sm leading-relaxed bg-[#eff7fe] text-justify">
-                    {tab.id === "features" && (
-                      <>
-                        <p className="mb-4">
-                          Tailored one-stop shop solutions that fit your
-                          business—1IGS’s comprehensive all-in-one services...
-                        </p>
-                        <p className="mb-8">
-                          We are not just consultants—we are collaborators...
-                        </p>
-                        {[
-                          "Procurement Strategy",
-                          "Transformation Solutions",
-                          "Collaborative Approach",
-                        ].map((title, i) => (
-                          <div key={i} className="mb-4">
-                            <h2 className="text-[#2D53A4] text-lg font-bold mb-2">
-                              {title}
-                            </h2>
-                            <p className="text-[#393939]">
-                              {
-                                [
-                                  "We bring your teams into the process...",
-                                  "Unlock hidden opportunities...",
-                                  "Implement sustainable frameworks...",
-                                ][i]
-                              }
-                            </p>
-                          </div>
-                        ))}
-                      </>
-                    )}
+                {/* ✅ Animated Accordion Content */}
+                <div
+                  className={`px-4 text-gray-800 text-sm leading-relaxed bg-[#eff7fe] text-justify overflow-hidden transition-all duration-500 ease-in-out ${
+                    openTabs[tab.id]
+                      ? "max-h-[1000px] py-4 opacity-100"
+                      : "max-h-0 py-0 opacity-0"
+                  }`}
+                >
+                  {tab.id === "features" && (
+                    <>
+                      <p className="mb-4">
+                        Tailored one-stop shop solutions that fit your
+                        business—1IGS’s comprehensive all-in-one services...
+                      </p>
+                      <p className="mb-8">
+                        We are not just consultants—we are collaborators...
+                      </p>
+                      {[
+                        "Procurement Strategy",
+                        "Transformation Solutions",
+                        "Collaborative Approach",
+                      ].map((title, i) => (
+                        <div key={i} className="mb-4">
+                          <h2 className="text-[#2D53A4] text-lg font-bold mb-2">
+                            {title}
+                          </h2>
+                          <p className="text-[#393939]">
+                            {
+                              [
+                                "We bring your teams into the process...",
+                                "Unlock hidden opportunities...",
+                                "Implement sustainable frameworks...",
+                              ][i]
+                            }
+                          </p>
+                        </div>
+                      ))}
+                    </>
+                  )}
 
-                    {tab.id === "strategy" && (
-                      <>
-                        <p className="mb-4">
-                          1IGS is transforming what procurement and supply chain
-                          teams can achieve...
-                        </p>
-                        {[1, 2].map((_, i) => (
-                          <div key={i} className="mb-4">
-                            <h2 className="text-[#2D53A4] text-lg font-bold mb-2">
-                              Build a Resilient Supply Chain With 1IGS
-                            </h2>
-                            <p className="text-[#393939] mb-2">
-                              At 1IGS, we specialize in efficient procurement
-                              outsourcing...
-                            </p>
-                            <div className="text-[#F06230] flex items-center text-sm font-medium">
-                              {i === 0
-                                ? "Optimize Your Supply Chain Today"
-                                : "Be ready for tomorrow’s challenges today"}{" "}
-                              <span className="ml-2">
-                                <MdKeyboardDoubleArrowRight />
-                              </span>
-                            </div>
+                  {tab.id === "strategy" && (
+                    <>
+                      <p className="mb-4">
+                        1IGS is transforming what procurement and supply chain
+                        teams can achieve...
+                      </p>
+                      {[1, 2].map((_, i) => (
+                        <div key={i} className="mb-4">
+                          <h2 className="text-[#2D53A4] text-lg font-bold mb-2">
+                            Build a Resilient Supply Chain With 1IGS
+                          </h2>
+                          <p className="text-[#393939] mb-2">
+                            At 1IGS, we specialize in efficient procurement
+                            outsourcing...
+                          </p>
+                          <div className="text-[#F06230] flex items-center text-sm font-medium">
+                            {i === 0
+                              ? "Optimize Your Supply Chain Today"
+                              : "Be ready for tomorrow’s challenges today"}
+                            <span className="ml-2">
+                              <MdKeyboardDoubleArrowRight />
+                            </span>
                           </div>
-                        ))}
-                      </>
-                    )}
+                        </div>
+                      ))}
+                    </>
+                  )}
 
-                    {tab.id === "managed" && (
-                      <>
-                        <p className="mb-4">
-                          1IGS delivers tailored managed services to help your
-                          business...
-                        </p>
-                        {[1, 2].map((_, i) => (
-                          <div key={i} className="mb-4">
-                            <h2 className="text-[#2D53A4] text-lg font-bold mb-2">
-                              {i === 0
-                                ? "Procurement Outsourcing"
-                                : "Supply Chain Outsourcing"}
-                            </h2>
-                            <p className="text-[#393939] mb-2">
-                              {i === 0
-                                ? "Optimize procurement and cut costs with 1IGS..."
-                                : "Optimize your supply chain with 1IG’s flexible outsourcing..."}
-                            </p>
-                            <div className="text-[#F06230] flex items-center text-sm font-medium">
-                              {i === 0
-                                ? "Get a Free Consultation Today"
-                                : "Transform Your Supply Chain Now"}{" "}
-                              <span className="ml-2">
-                                <MdKeyboardDoubleArrowRight />
-                              </span>
-                            </div>
+                  {tab.id === "managed" && (
+                    <>
+                      <p className="mb-4">
+                        1IGS delivers tailored managed services to help your
+                        business...
+                      </p>
+                      {[1, 2].map((_, i) => (
+                        <div key={i} className="mb-4">
+                          <h2 className="text-[#2D53A4] text-lg font-bold mb-2">
+                            {i === 0
+                              ? "Procurement Outsourcing"
+                              : "Supply Chain Outsourcing"}
+                          </h2>
+                          <p className="text-[#393939] mb-2">
+                            {i === 0
+                              ? "Optimize procurement and cut costs with 1IGS..."
+                              : "Optimize your supply chain with 1IG’s flexible outsourcing..."}
+                          </p>
+                          <div className="text-[#F06230] flex items-center text-sm font-medium">
+                            {i === 0
+                              ? "Get a Free Consultation Today"
+                              : "Transform Your Supply Chain Now"}
+                            <span className="ml-2">
+                              <MdKeyboardDoubleArrowRight />
+                            </span>
                           </div>
-                        ))}
-                      </>
-                    )}
-                  </div>
-                )}
+                        </div>
+                      ))}
+                    </>
+                  )}
+                </div>
               </div>
             ))}
           </div>
 
           {/* Desktop Tabs */}
-          <div className="hidden sm:flex flex-wrap justify-center border-b-4 border-[#2d4c92] relative">
+          <div className="hidden sm:flex flex-wrap justify-center border-b-2 border-[#2d4c92] relative">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`text-sm md:text-base font-bold py-2 mx-2 transition-all duration-300 ${
+                className={`text-sm lg:text-base  font-bold py-2 mx-2 transition-all duration-300 ${
                   activeTab === tab.id
                     ? `bg-[#2d4c92] text-white rounded-t-md -mb-[2px] ${
                         tab.id === "strategy" ? "px-8" : "px-4"

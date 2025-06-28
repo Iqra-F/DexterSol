@@ -12,7 +12,7 @@ export default function FooterColumn({ title, links = [] }) {
         className="flex justify-between items-center cursor-pointer md:cursor-default"
         onClick={() => setIsOpen((prev) => !prev)}
       >
-        <h3 className="text-xs  md:text-base sm:font-semibold md:font-bold mb-2">{title}</h3>
+        <h3 className="text-xs   md:text-sm sm:font-semibold md:font-bold mb-2">{title}</h3>
         <span className="md:hidden text-xs sm:text-sm">
           {isOpen ? <FaChevronUp /> : <FaChevronDown />}
         </span>
@@ -28,7 +28,7 @@ export default function FooterColumn({ title, links = [] }) {
           {links.map((link, index) => (
             <li
               key={index}
-              className="border-b-[1px] pb-2 border-gray-400 flex items-center"
+              className="border-b-[1px] pb-2 text-xs lg:text-[9px] border-gray-400 flex items-center"
             >
               <FaCaretRight className="mr-1" /> {link}
             </li>

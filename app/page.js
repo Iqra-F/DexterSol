@@ -14,8 +14,8 @@ export default function Home() {
       <WhyUs />
       <LetsCreate />
       {/* <CreateCard /> */}
-      <SupplyChain/>
-      <NextStep/>
+      <SupplyChain />
+      <NextStep />
     </main>
   );
 }

@@ -45,7 +45,7 @@ export default function CreateCard({
 
       {/* Button */}
       <div className="text-center">
-        <button className="bg-[#F36434] hover:bg-[#4e586f] w-full text-base text-white px-2 md:px-1  py-3 rounded transition-all duration-300">
+        <button className="bg-[#F36434] hover:bg-[#4e586f] w-full  text-white  sm:text-base md:text-sm text-sm px-2 sm:px-3 md:px-1 md:py-2  py-3 rounded transition-all duration-300">
           {create.btnText} ≫
         </button>
       </div>

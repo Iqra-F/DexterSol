@@ -39,26 +39,24 @@ export default function WhyUs() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
           {/* Why IIGS */}
           <div className="bg-[#eff7fe] w-full transition-all duration-700 transform hover:scale-105 p-2 sm:p-4 md:p-6 rounded-lg shadow-sm">
-            <h2 className="text-3xl sm:text-[36px] md:text-[49px] text-[#2460b4] font-bold mb-2">
+            <h2 className=" text-lg lg:text-[36px] md:text-[49px] text-[#2460b4] font-bold mb-2">
               Why <span className="text-[#F06230]">IIGS</span>?
             </h2>
-            <h3 className="text-xl sm:text-2xl font-semibold text-[#2460b4] mb-4">
+            <h3 className="text-lg  lg:text-2xl font-semibold text-[#2460b4] mb-4">
               Reinventing Possibilities with IIGS
             </h3>
-            <p className="text-gray-600 text-base sm:text-[18px] md:text-[20px] mb-6 leading-relaxed">
-              At IIGS, we transform more than supply chains—we redefine
-              industries. Together, we’ve reshaped the procurement strategies
-              behind the special effects that amaze, the stadiums that unite,
-              the food we share, the clothes we wear, the cars we drive, and
-              even the holidays we cherish. With IIGS, reinvention isn’t just
-              possible; it’s inevitable.
+            <p className="text-gray-600 text-sm sm:text-lg lg:text-base sm:text-[18px] md:text-[20px] mb-6 leading-relaxed">
+              We specialize in procurement transformation, helping businesses
+              streamline processes, drive efficiency, and uncover hidden value
+              even within the most challenging environments for long-term
+              success.
             </p>
-            <p className="text-gray-600 mb-6 text-base sm:text-[18px] md:text-[20px] leading-relaxed">
-              Efficiency, precision, and exceptional outcomes—that’s the IIGS
-              promise.
+            <p className="text-gray-600 text-sm sm:text-lg lg:text-base sm:text-[18px] md:text-[20px] mb-6 leading-relaxed">
+              Call us today and discover how IIGS can redefine your supply chain
+              and fuel your business growth.
             </p>
-            <button className="text-[#2460b4] flex items-center text-base sm:text-[18px] md:text-[20px] hover:text-blue-700 font-semibold transition-colors">
-              PARTNER WITH US TODAY{" "}
+            <button className="text-[#2460b4] flex items-center text-sm sm:text-base  md:text-[20px] hover:text-blue-700 font-semibold transition-colors">
+              DISCOVER IIGS TODAY{" "}
               <span className="ml-2">
                 <MdKeyboardDoubleArrowRight />
               </span>
@@ -67,23 +65,23 @@ export default function WhyUs() {
 
           {/* What We Do */}
           <div className="bg-[#eff7fe] w-full transition-all duration-700 transform hover:scale-105 p-2 sm:p-4 md:p-6 rounded-lg shadow-sm">
-            <h2 className="text-3xl sm:text-[36px] md:text-[49px] text-[#2460b4] font-bold mb-2">
+            <h2 className=" text-lg lg:text-[36px] md:text-[49px] text-[#2460b4] font-bold mb-2">
               What <span className="text-[#F06230]">We Do</span>
             </h2>
-            <h3 className="text-xl sm:text-2xl font-semibold text-[#2460b4] mb-4">
+            <h3 className="text-lg  lg:text-2xl font-semibold text-[#2460b4] mb-4">
               Procurement Strategy and Transformation
             </h3>
-            <p className="text-gray-600 mb-6 text-base sm:text-[18px] md:text-[20px] leading-relaxed">
+            <p className="text-gray-600 text-sm sm:sm:text-[18px] lg:text-base sm:text-[18px] md:text-[20px] mb-6 leading-relaxed">
               We specialize in procurement transformation, helping businesses
               streamline processes, drive efficiency, and uncover hidden value
               even within the most challenging environments for long-term
               success.
             </p>
-            <p className="text-gray-600 mb-6 text-base sm:text-[18px] md:text-[20px] leading-relaxed">
+            <p className="text-gray-600 text-sm sm:sm:text-[18px] lg:text-base sm:text-[18px] md:text-[20px] mb-6 leading-relaxed">
               Call us today and discover how IIGS can redefine your supply chain
               and fuel your business growth.
             </p>
-            <button className="text-[#2460b4] flex items-center text-base sm:text-[18px] md:text-[20px] hover:text-blue-700 font-semibold transition-colors">
+            <button className="text-[#2460b4] flex items-center text-sm sm:text-base  md:text-[20px] hover:text-blue-700 font-semibold transition-colors">
               DISCOVER IIGS TODAY{" "}
               <span className="ml-2">
                 <MdKeyboardDoubleArrowRight />

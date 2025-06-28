@@ -42,21 +42,21 @@ export const create = [
     description:
       "Leverage predictive analytics and scenario planning to identify potential risks and develop the best response strategies.",
     image: "/1.png",
-    btnText: "Request a free consultation ",
+    btnText: "Request free consultation ",
   },
   {
     title: "Improved Cash Flow",
     description:
       "Leverage predictive analytics and scenario planning to identify potential risks and develop the best response strategies.",
     image: "/2.png",
-    btnText: "Request a free consultation ",
+    btnText: "Request free consultation ",
   },
   {
     title: "Improved Cash Flow",
     description:
       "Leverage predictive analytics and scenario planning to identify potential risks and develop the best response strategies.",
     image: "/1.png",
-    btnText: "Request a free consultation ",
+    btnText: "Request free consultation ",
   },
 ];
 export const supply = [
@@ -65,21 +65,21 @@ export const supply = [
     description:
       "We adopt sustainability practices to provide long-term benefits.",
     image: "/1.png",
-    btnText: "Unlock your business&rsquo;s full potential ",
+    btnText: "Unlock your business potential ",
   },
   {
     title: "Who is 1IGS?",
     description:
       "We adopt sustainability practices to provide long-term benefits.",
     image: "/1.png",
-    btnText: "Unlock your business&rsquo;s full potential ",
+    btnText: "Unlock your business potential ",
   },
   {
     title: "Who is 1IGS?",
     description:
       "We adopt sustainability practices to provide long-term benefits.",
     image: "/1.png",
-    btnText: "Unlock your business&rsquo;s full potential ",
+    btnText: "Unlock your business potential ",
   },
 ];
 export default services;

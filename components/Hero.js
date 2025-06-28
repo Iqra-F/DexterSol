@@ -39,7 +39,7 @@ const Hero = () => {
               Fresh perspective to consistently innovative
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-12">
-              <button className="bg-[#F36434] flex gap-2 items-center justify-center rounded-lg font-bold text-sm sm:text-base px-[13px] py-[16px]">
+              <button className="bg-[#F36434] hover:bg-[#4e586f] flex gap-2 items-center justify-center rounded-lg font-bold text-sm sm:text-base px-[13px] py-[16px]">
                 CONTACT OUR EXPERTS <IoCaretForwardOutline />
               </button>
               <button className="font-bold text-base sm:text-lg p-[13px]">

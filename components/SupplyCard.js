@@ -44,7 +44,7 @@ export default function SupplyCard({
       {/* Button */}
       <div className="justify-start text-center">
         <button
-          className={`bg-[#2D53A4] hover:bg-[#4e586f] text-white font-semibold p-3 rounded transition-all duration-300`}
+          className={`bg-[#2D53A4] font-normal  hover:bg-[#4e586f] text-white md:text-base   text-sm px-2 sm:px-3 md:px-1 lg:px-3 py-3 rounded transition-all duration-300`}
         >
           {supply.btnText} ≫
         </button>
