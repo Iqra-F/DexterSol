@@ -53,7 +53,7 @@ const Header = () => {
         <div className="flex justify-between items-center py-2">
           {/* 🔷 Logo */}
           <div className="flex items-center">
-            <div className="md:w-[204px] md:h-[50px]  sm:w-[150px] sm:h-[35px] w-[60px] h-[20px] mr-1 sm:mr-2 relative rounded-lg overflow-hidden">
+            <div className=" md:h-[50px] xl:w-[190px]  sm:w-[150px] sm:h-[35px] w-[60px] h-[20px] mr-1 sm:mr-2 relative rounded-lg overflow-hidden">
               <Image
                 src="/igs-logo.png"
                 alt="IGS Logo"
@@ -173,21 +173,21 @@ const Header = () => {
       <div
         className={`${
           isScrolled ? "text-gray-900" : "text-white"
-        } text-xs sm:text-sm font-bold space-x-3 flex flex-wrap justify-start px-1 sm:px-6 h-8 sm:h-10 items-center`}
+        } text-xs sm:text-sm font-semibold space-x-3 flex flex-wrap justify-start px-1 sm:px-6 h-8 sm:h-10 items-center`}
       >
-        <div className="text-[#2460b4] text-[7px] sm:text-sm md:text-lg flex items-center">
+        <div className="text-[#2460b4] text-[7px] sm:text-xs 2xl:text-sm flex items-center">
           <span className="text-[#d2562b] mr-1">1IGS </span> STRATEGY{" "}
           <span className="text-[10px] ml-1  text-white ">
             <IoCaretDownOutline />
           </span>
         </div>
-        <div className="text-[#2460b4] text-[7px] sm:text-sm md:text-lg flex items-center">
+        <div className="text-[#2460b4] text-[7px] sm:text-xs 2xl:text-sm flex items-center">
           <span className="text-[#d2562b] mr-1">1IGS </span> Products{" "}
           <span className="text-[10px] ml-1 text-white">
             <IoCaretDownOutline />
           </span>
         </div>
-        <div className="text-[#2460b4] text-[7px] sm:text-sm md:text-lg flex items-center">
+        <div className="text-[#2460b4] text-[7px] sm:text-xs 2xl:text-sm flex items-center">
           <span className="text-[#d2562b] mr-1">1IGS </span> Managed services{" "}
           <span className="text-[10px] ml-1 text-white">
             <IoCaretDownOutline />

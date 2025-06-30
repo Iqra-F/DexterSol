@@ -22,7 +22,7 @@ const Hero = () => {
       <section
         ref={heroRef}
         id="home"
-        className="relative bg-gradient-to-br from-[#040a13] to-[#043739] p-3 sm:px-16 pb-4 mx-auto pt-64 items-center w-full overflow-hidden"
+        className="relative bg-gradient-to-br from-[#040a13] to-[#043739] p-3 sm:px-16 pb-4 mx-auto pt-40  w-full overflow-hidden"
       >
         {/* Glowing stars */}
         <StarCanvas parentRef={heroRef} />
@@ -35,14 +35,14 @@ const Hero = () => {
             <h1 className="text-3xl md:text-3xl lg:text-[40px] font-semibold tracking-tighter">
               Global Impact, Expertly Delivered
             </h1>
-            <p className="text-lg md:text-xl text-blue-100">
+            <p className="text-sm lg:text-base xl:text-lg text-blue-100">
               Fresh perspective to consistently innovative
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-12">
-              <button className="bg-[#F36434] hover:bg-[#4e586f] flex gap-2 items-center justify-center rounded-lg font-bold text-sm sm:text-base px-[13px] py-[16px]">
+              <button className="bg-[#F36434] hover:bg-[#4e586f] flex gap-2 items-center justify-center rounded-lg text-sm xl:text-base 2xl:text-lg  px-[13px] py-3">
                 CONTACT OUR EXPERTS <IoCaretForwardOutline />
               </button>
-              <button className="font-bold text-base sm:text-lg p-[13px]">
+              <button className=" text-sm border border-white hover:border-black rounded-lg hover:bg-white hover:text-black xl:text-base 2xl:text-lg p-[13px]">
                 BOOK A MEETING
               </button>
             </div>
@@ -61,7 +61,7 @@ const Hero = () => {
           </div>
 
           {/* Boxes */}
-          <p className="sm:text-[20px]  mt-10 w-full text-white">
+          <p className="text-sm lg:text-base  mt-10 w-full text-white">
             Seamless Solutions, Endless Possibilities
           </p>
           <div className="max-w-7xl mx-auto grid grid-cols-1 z-20 lg:grid-cols-3 gap-8">
@@ -70,15 +70,15 @@ const Hero = () => {
                 key={i}
                 className="p-2 bg-white/10 backdrop-blur-sm rounded-lg border border-white/10"
               >
-                <h2 className="text-white text-lg sm:text-[24px] font-semibold mb-4">
+                <h2 className="text-white lg:text-lg text-base font-semibold mb-4">
                   Humble, collaborative and passionate
                 </h2>
-                <p className="text-white text-base sm:text-[18px] mb-4">
+                <p className="text-white  text-sm lg:text-base  mb-4">
                   We don’t work from the outside looking in. At 1IGS, we
                   co-create solutions with our clients, ensuring strategies are
                   aligned with their goals and operational realities.
                 </p>
-                <div className="text-[#F06230] flex items-center text-base sm:text-[18px] font-medium">
+                <div className="text-[#F06230] flex items-center text-sm lg:text-base  font-medium">
                   Let&apos;s Co-Create{" "}
                   <span className="ml-2">
                     <MdKeyboardDoubleArrowRight />
